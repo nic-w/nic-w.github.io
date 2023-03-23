@@ -87,7 +87,7 @@ Error generating stack: `+l.message+`
   font-size: 44px;
   width: 120px;
   text-align: center;
-`,ym=({checkSubmit:e})=>K.jsx(gm,{children:K.jsx(vm,{onKeyDown:t=>{console.log(t.key),(t.key==="Enter"||t.key===" ")&&(e(t.target.value),t.currentTarget.value="")}})}),wm=tt.div`
+`,ym=({checkSubmit:e})=>K.jsx(gm,{children:K.jsx(vm,{onKeyDown:t=>{(t.key==="Enter"||t.key===" "&&t.target.value.trim().length>0)&&(t.preventDefault(),console.log(t.target.value.trim()),e(t.target.value.trim()),t.currentTarget.value="")}})}),wm=tt.div`
   width: 350px;
   height: 40px;
   border-radius: 10px;
