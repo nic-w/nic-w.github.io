@@ -60,10 +60,11 @@ Error generating stack: `+l.message+`
   font-weight: bold;
 `,fm=({character:e})=>B.jsx(cm,{children:e}),dm=tt.div`
   width: 420px;
-  height: 220px;
+  height: 120px;
   border-radius: 10px;
   margin: auto;
-  margin-top: 5%;
+  margin-top: 40px;
+  margin-bottom: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
